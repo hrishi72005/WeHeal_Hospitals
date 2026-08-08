@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "appointments": {
+      "title": "Appointment",
+      "description": "Hospital OPD appointment bookings",
+      "type": "object",
+      "properties": {
+        "bookingReference": { "type": "string" },
+        "patientName": { "type": "string" },
+        "patientPhone": { "type": "string" },
+        "patientEmail": { "type": "string" },
+        "patientAge": { "type": "number" },
+        "patientGender": { "type": "string" },
+        "isFirstVisit": { "type": "boolean" },
+        "departmentId": { "type": "string" },
+        "departmentName": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "doctorImage": { "type": "string" },
+        "date": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "reason": { "type": "string" },
+        "consultationFee": { "type": "number" },
+        "roomNo": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["bookingReference", "patientName", "patientPhone", "doctorId", "date", "timeSlot", "status"]
+    }
+  }
+}
